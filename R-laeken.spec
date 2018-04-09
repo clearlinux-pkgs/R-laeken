@@ -4,7 +4,7 @@
 #
 Name     : R-laeken
 Version  : 0.4.6
-Release  : 2
+Release  : 3
 URL      : https://cran.r-project.org/src/contrib/laeken_0.4.6.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/laeken_0.4.6.tar.gz
 Summary  : Estimation of indicators on social exclusion and poverty
@@ -25,11 +25,11 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1521171259
+export SOURCE_DATE_EPOCH=1523311931
 
 %install
 rm -rf %{buildroot}
-export SOURCE_DATE_EPOCH=1521171259
+export SOURCE_DATE_EPOCH=1523311931
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
 export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
