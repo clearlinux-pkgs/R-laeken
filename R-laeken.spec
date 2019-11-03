@@ -4,7 +4,7 @@
 #
 Name     : R-laeken
 Version  : 0.5.0
-Release  : 23
+Release  : 24
 URL      : https://cran.r-project.org/src/contrib/laeken_0.5.0.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/laeken_0.5.0.tar.gz
 Summary  : Estimation of Indicators on Social Exclusion and Poverty
