@@ -4,14 +4,12 @@
 #
 Name     : R-laeken
 Version  : 0.5.1
-Release  : 27
+Release  : 28
 URL      : https://cran.r-project.org/src/contrib/laeken_0.5.1.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/laeken_0.5.1.tar.gz
 Summary  : Estimation of Indicators on Social Exclusion and Poverty
 Group    : Development/Tools
 License  : GPL-2.0+
-Requires: R-sampling
-BuildRequires : R-sampling
 BuildRequires : buildreq-R
 
 %description
@@ -19,21 +17,22 @@ as Pareto tail modeling for empirical income distributions.
 
 %prep
 %setup -q -c -n laeken
+cd %{_builddir}/laeken
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1580952225
+export SOURCE_DATE_EPOCH=1589826996
 
 %install
-export SOURCE_DATE_EPOCH=1580952225
+export SOURCE_DATE_EPOCH=1589826996
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
+export FCFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
+export FFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
 export CXXFLAGS="$CXXFLAGS -O3 -flto -fno-semantic-interposition "
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
